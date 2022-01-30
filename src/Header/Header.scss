@@ -1,0 +1,42 @@
+header {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 10rem;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #cec9c9;
+
+    .menu-items {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        
+
+        li {
+            padding-left: 2em;
+            cursor: pointer;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+        }
+
+         a{
+            text-decoration: none;
+            color: #cec9c9;
+
+            &:hover {
+                opacity: .5;
+                transition: .5s;
+                color: red;
+            }
+
+         }
+
+    }
+}

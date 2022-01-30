@@ -1,38 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+@font-face {
+  font-family: 'almonedaregular';
+  src: url("./Fonts/Almoneda-Regular.otf") format("woff2"), url("./Fonts/Almoneda-Regular.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'almonedabold';
+  src: url("./Fonts/Almoneda-Bold.otf") format("woff2"), url("./Fonts/Almoneda-Bold.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'almonedalight';
+  src: url("./Fonts/Almoneda-Light.otf") format("woff2"), url("./Fonts/Almoneda-Light.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 0 10rem;
+}
+
+body {
+  background-color: #1A1919;
+  color: #cec9c9;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
+h1, h2 {
+  font-family: 'Almoneda';
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.noise::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  /* opacity: 1; */
+  opacity: .06;
+  z-index: 1500;
   pointer-events: none;
+  background: url(./Assets/noise.gif);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */

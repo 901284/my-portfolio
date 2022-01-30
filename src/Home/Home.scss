@@ -1,0 +1,287 @@
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    h1 {
+        font-size: 300px;
+        letter-spacing: 5px;
+        line-height: .8;
+        text-transform: uppercase;
+        text-align: center;
+        color: red;
+        /*      padding-top: .25em;*/   
+     }
+
+        h5 {
+            text-align: center;
+            font-family: 'Almoneda';
+            color: white;
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 300;
+
+        }
+
+        span {
+            color: red;
+            font-weight: 400;
+        }
+
+        .inner-text {
+            position: absolute;
+            width: 53vw;
+            color: red;
+            display: flex;
+            text-transform: uppercase;
+            justify-content: space-between;
+            align-items: flex-end;
+            text-align: center;
+            margin-bottom: 27rem;
+
+            h4 {
+                margin: 0;
+                font-size: 4rem;
+                letter-spacing: 2px;
+                line-height: .8;
+                font-family: 'Almoneda';
+                font-weight: 400;  
+                color: #cec9c9;
+
+
+              /*   &:hover {
+                    transform: translateY(-1.5rem) scale(1.03);  
+                 } */
+            }
+        }
+
+    .landing-right {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .landing-left {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.my-skills-main-reel {
+    width: 100%;
+    overflow: hidden;
+
+    .my-skills-reel {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        width: fit-content;
+        will-change: transform;
+        animation: animation-reel 120s infinite linear;
+    }
+
+    .reel-item {
+        font-weight: 400;
+        font-size: 180px;
+        text-transform: uppercase;
+        font-family: 'Almoneda';
+    }
+}
+
+.about-me-container {
+    padding-bottom: 6em;
+
+    p {
+        font-size: 2.5rem;
+        width: 80%;
+        font-weight: lighter;
+    }
+
+    h1 {
+        font-size: 150px;
+        text-transform: uppercase;
+    }
+
+    .about-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .flower-svg img {
+        width: 130px;
+        animation: animate-rotate 10s infinite linear;
+       }
+
+
+@keyframes animate-rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+    }
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 6em;
+
+    .card {
+        display: inline-block;
+        font-size: 14px;
+        padding: 5px 100px 25px 30px;
+        color: #cec9c9;
+        line-height: 1.4;
+        text-shadow: 0px 1px 3px rgba(0,0,0,0.75);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+        width: calc(33.3% - 180px);
+        min-height: 140px;
+        background: rgba(255,255,255,0.15);
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4"%3E%3Cpath fill="%239C92AC" fill-opacity="0.4" d="M1 3h1v1H1V3zm2-2h1v1H3V1z"%3E%3C/path%3E%3C/svg%3E');
+        margin: 2em 0;
+        transition: transform .3s;
+
+        &:hover {
+            transform: translateY(-1.5rem) scale(1.03);
+            border: 1px solid #cec9c9;
+        }
+      }
+      
+      .icon{
+        position: absolute;
+        left: calc(100% - 200px);
+        top: -10px;
+        font-size: 80px;
+        transform: rotate(-35deg);
+        color: #494848;
+        font-size: 15em;
+        z-index: -1;
+      }
+      
+      .card img.bg {
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+      }
+      
+      .card h2 {
+        color: #cec9c9;
+        font-weight: 800;
+        font-size: 28px;
+        margin: 10px 0px 8px -2px;
+        text-shadow: none;
+        font-family: 'Montserrat', sans-serif;
+    
+      }
+      
+    }
+    
+.my-projects-container {
+    width: 100%;
+
+    h1 {
+        font-size: 150px;
+        text-transform: uppercase;
+        text-align: right;
+    }
+
+    .project-card {
+        background: rgba(255,255,255,0.15);
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4"%3E%3Cpath fill="%239C92AC" fill-opacity="0.4" d="M1 3h1v1H1V3zm2-2h1v1H3V1z"%3E%3C/path%3E%3C/svg%3E');
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 3rem auto;
+        transition: transform .3s;
+        filter: grayscale(1);
+
+        &:hover {
+            transform: translateY(-1.5rem) scale(1.03);
+            filter: none;
+            -webkit-filter: grayscale(0%);
+        }
+    }
+
+
+    .project-img {
+        background: url(../../public/project2.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: left;
+        width: 70%;
+        height: 400px;
+    }
+
+    .project-info {
+        width: 30%;
+        line-height: 1.5;
+        position: relative;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        padding-left: 3rem;
+
+    }
+
+    p {
+        font-size: 18px;
+        width: 70%;
+        padding-left: 3rem;
+        
+    }
+
+    #arrow {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 1em;
+        cursor: pointer;
+        transition: transform .3s;
+
+        &:hover {
+            transform: rotate(-90deg) translateY(-.1rem) scale(1.03);
+        }
+    }
+
+}
+
+ // media queries //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  @media only screen and (max-width: 1200px) {
+    .card {  
+      width: calc(50% - 170px);
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .card {  
+      width: calc(100% - 160px);
+    }
+  }
+
+// keyframes //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  @keyframes animation-reel {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
