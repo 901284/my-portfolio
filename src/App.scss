@@ -9,19 +9,12 @@
 }
 
 @font-face {
-  font-family: 'almonedabold';
-  src: url('./Fonts/Almoneda-Bold.otf') format('woff2'),
-       url('./Fonts/Almoneda-Bold.otf') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'almonedalight';
   src: url('./Fonts/Almoneda-Light.otf') format('woff2'),
        url('./Fonts/Almoneda-Light.otf') format('woff');
   font-weight: normal;
   font-style: normal;
+
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -44,7 +37,7 @@ body {
 // universal // 
 
 h1,h2 {
-  font-family: 'Almoneda';
+  font-family: 'almonedaregular';
   font-weight: 400;
   margin: 0;
   padding: 0;
