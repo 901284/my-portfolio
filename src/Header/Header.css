@@ -45,4 +45,17 @@ header .menu-items a:hover {
   transition: .5s;
   color: red;
 }
+
+@media only screen and (max-width: 414px) {
+  header {
+    width: 100%;
+    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .menu-items {
+    display: none;
+  }
+}
 /*# sourceMappingURL=Header.css.map */

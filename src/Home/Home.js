@@ -40,11 +40,10 @@ function Home() {
         <div className='home'>
                         <Header />
             <div className='page-content'>
-                 <div class="landing">
-                    <div class="big-text">
+                 <div className="landing">
+                    <div className="big-text">
                         <h1 ref={el => mainText = el}>Lucas<br />Vieira</h1>
-{/*                         <h5>« 19<span> EST </span>98 »</h5>
- */}                    </div>
+                    </div>
                         
 
                      <div class="inner-text">
@@ -54,7 +53,7 @@ function Home() {
                 </div> 
                 
                 <div className="about-me-container">
-                    <div class="about-top">
+                    <div className="about-top">
                         <h1>About Me</h1>
                         <div className="flower-svg"><img src={another} alt="" /></div>
                     </div>
@@ -86,38 +85,38 @@ function Home() {
                 </div>
                     
                     <IconContext.Provider value={{ className: "icon"}}>
-                    <div class="card-container">
-                        <div class="card">
+                    <div className="card-container">
+                        <div className="card">
                             <FaReact />
                             <h2> React.js </h2>
                             A JavaScript library for seamlessly creating interactive UI's.
                         </div>
 
-                        <div class="card">
+                        <div className="card">
                             <SiGreensock />
                             <h2> GreenSock</h2>
                             An industry standard JavaScript animation library that produces high-performances animations.
                         </div>
 
-                        <div class="card">
+                        <div className="card">
                             <FaFigma />
                             <h2> Figma </h2>
                             A web based collaborative interface design tool with a cloud based design.
                         </div>
 
-                        <div class="card">
+                        <div className="card">
                             <FaGithub />
                             <h2> Git </h2>
                             Powerful versatility which allows for easy facilitating of collaboration as well as powerful version control.
                         </div>
 
-                        <div class="card">
+                        <div className="card">
                             <FaSass />
                             <h2> Sass </h2>
                             CSS with superpowers: one of the most popular CSS extensions, boasting numerous features and abilities.
                         </div>
 
-                        <div class="card">
+                        <div className="card">
                             <FaJsSquare />
                             <h2> JavaScript </h2>
                             A high level programming language that dominates the web.
@@ -141,7 +140,7 @@ function Home() {
                             <div className="project-img"></div>
                         </div>
 
-                        <div className="project-card">
+                        <div className="project-card flip">
                             <div className="project-img"></div>
                             <div className="project-info">
                                 <h3>Paolo<br />Fornasier</h3>

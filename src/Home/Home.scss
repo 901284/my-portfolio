@@ -246,7 +246,7 @@
         right: 0;
         padding: 1em;
         cursor: pointer;
-        transition: transform .3s;
+        transition: .5s;
 
         &:hover {
             transform: rotate(-90deg) translateY(-.1rem) scale(1.03);
@@ -255,19 +255,7 @@
 
 }
 
- // media queries //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  @media only screen and (max-width: 1200px) {
-    .card { 
-      width: calc(50% - 170px);
-    }
-  }
-  
-  @media only screen and (max-width: 800px) {
-    .card {  
-      width: calc(100% - 160px);
-    }
-  }
-
+ // laptop styling //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   @media only screen and (max-width: 1280px) {
     .landing {
         h1 {
@@ -296,6 +284,12 @@
         }
     }
 
+    .card-container {
+        .card {
+            width: calc(33.3% - 1px);
+        }
+    } 
+
     .project-card {
         .project-img {
             background-size: 100%;
@@ -303,11 +297,6 @@
             background-repeat: no-repeat;
             background-position: left;
             width: 70%;
-        }
-
-        .card {
-            padding: 0;
-            margin: 0;
         }
 
         .project-info {
@@ -324,6 +313,104 @@
 
     }
   }
+
+// iphone 11 styling //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  @media only screen and (max-width: 414px) {
+    body {
+        margin: 0 2rem;
+        padding: 0;
+    }
+
+    .noise::before {
+        width: 100%;
+        height: 100%;
+    }
+
+    .landing {
+        h1 {
+            font-size: 130px;
+        }
+
+        .inner-text h4 {
+            font-size: 20px;
+        }
+    }
+
+    .about-me-container {
+        p {
+            font-size: 16px;
+        }
+
+        .flower-svg {
+            display: none;
+        }
+    }
+
+    .my-skills-main-reel {
+        .reel-item {
+            font-size: 100px;
+        }
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card {
+            width: 200px
+        }
+    }
+
+    .projects {
+        display: block;
+
+         #arrow {
+             position: absolute;
+             bottom: 1%;
+             right: 4%;
+             width: 15px;
+         }
+
+         .project-card {
+             display: flex;
+             flex-direction: column-reverse;
+             position: relative;
+
+             &:nth-child(even) {
+                flex-direction: column;
+             }
+
+
+             .project-info {
+                 width: 100%;
+                 padding: .5em;
+
+                 h3 {
+                    font-size: 22px;
+                    padding: 0 1rem;
+
+                }
+    
+                p {
+                    font-size: 15px;
+                    padding: 0 1rem;
+                }
+             }
+
+             .project-img {
+                width: 100%;
+                height: 200px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+    
+             }
+         }
+
+    }
+    
+  }
+
 // keyframes //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   @keyframes animation-reel {
     from{

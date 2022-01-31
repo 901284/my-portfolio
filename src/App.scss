@@ -45,8 +45,7 @@ h1,h2 {
 
 
 // noise .//
-.noise {
-  &::before{
+.noise::before{
       position: fixed;
       top: 0;
       left: 0;
@@ -58,6 +57,5 @@ h1,h2 {
       z-index: 1500;
       pointer-events: none;
       background: url(./Assets/noise.gif);
-    }
 }
 
