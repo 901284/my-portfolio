@@ -13,16 +13,16 @@ import gsap from 'gsap';
 
 function Home() {
 
-    let mainText = useRef(null)
-    let leftText = useRef(null)
-    let rightText = useRef(null)
+    let mainText = useRef()
+    let leftText = useRef()
+    let rightText = useRef()
 
     const timelineAbout = gsap.timeline();
     
     useEffect(() => {
         timelineAbout.from([leftText, rightText], {
             duration: 1.2,
-            y: 500,
+            y: 1000,
             skewY: 30,
             stagger: {
                 amount: .4
@@ -52,7 +52,7 @@ function Home() {
                     </div> 
                 </div> 
                 
-                <div className="about-me-container">
+                <div className="about-me-container ">
                     <div className="about-top">
                         <h1>About Me</h1>
                         <div className="flower-svg"><img src={another} alt="" /></div>

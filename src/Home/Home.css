@@ -116,7 +116,6 @@
 
 .about-me-container p {
   font-size: 2.5rem;
-  width: 80%;
   font-weight: lighter;
 }
 
@@ -354,6 +353,19 @@
   }
 }
 
+@media only screen and (max-width: 1440px) {
+  .landing h1 {
+    font-size: 220px;
+  }
+  .landing .inner-text {
+    margin-bottom: 20rem;
+    width: 50vw;
+  }
+  .landing .inner-text h4 {
+    font-size: 38px;
+  }
+}
+
 @media only screen and (max-width: 414px) {
   body {
     margin: 0 2rem;
@@ -375,8 +387,11 @@
   .about-me-container .flower-svg {
     display: none;
   }
+  .about-me-container h1 {
+    font-size: 90px;
+  }
   .my-skills-main-reel .reel-item {
-    font-size: 100px;
+    font-size: 90px;
   }
   .card-container {
     display: -webkit-box;
@@ -435,6 +450,9 @@
     height: 200px;
     background-size: 100%;
     background-repeat: no-repeat;
+  }
+  .my-projects-container h1 {
+    font-size: 90px;
   }
 }
 
